@@ -61,7 +61,7 @@ $result = json_decode($result, true);
                 <div class="form-content">
                     <div class="form-items">
                         <h3>Pejuang Team Prepare for Something Big</h3>
-                        <p><?php echo $result['content'] ?></p>
+                        <p>"<?php echo $result['content'] ?>" - <?php echo $result['author'] ?></p>
                         <!-- <form class="form-row">
                             <div class="col-md-8">
                                 <input type="text" class="form-control" placeholder="E-mail Address">
