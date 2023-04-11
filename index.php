@@ -1,3 +1,14 @@
+<?php
+$ch = curl_init();
+$url = 'https://api.quotable.io/random?tags=technology';
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+$result = curl_exec($ch);
+curl_close($ch);
+$result = json_decode($result, true);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +61,7 @@
                 <div class="form-content">
                     <div class="form-items">
                         <h3>Pejuang Team Prepare for Something Big</h3>
-                        <p>We Currently Prepare for Massive Project and Will On Air in 2024. Wait for Us.</p>
+                        <p><?php echo $result['content'] ?></p>
                         <!-- <form class="form-row">
                             <div class="col-md-8">
                                 <input type="text" class="form-control" placeholder="E-mail Address">
