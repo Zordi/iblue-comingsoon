@@ -2,7 +2,7 @@
 $(window).on("load", function() {
     function countDown(){
         var today = new Date();
-        var eventDate = new Date("January 01,2024 00:00:00");
+        var eventDate = new Date("April 01,2024 00:00:00");
         var currentTime = today.getTime();
         var eventTime = eventDate.getTime();
         var remTime = eventTime - currentTime;

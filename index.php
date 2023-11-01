@@ -14,7 +14,7 @@ $result = json_decode($result, true);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pejuang Team</title>
+    <title>iBlue</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/iosoon-style.css">
@@ -46,11 +46,11 @@ $result = json_decode($result, true);
                 </div>
             </a>
         </div>
-        <div class="other-links other-links-up no-bg-icon">
+        <!-- <div class="other-links other-links-up no-bg-icon">
             <a href="https://instagram.com/pejuangteam.id" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/message/LIRWFIJPYMHWP1" target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a href="https://tokopedia.com/pejuang-team" target="_blank"><i><img src="images/tokopedia.png" style="margin-top: -5px;" height="18px"></i></a>
-        </div>
+        </div> -->
         <div class="row">
             <div class="img-holder">
                 <div class="info-holder">
@@ -60,7 +60,7 @@ $result = json_decode($result, true);
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        <h3>Pejuang Team Prepare for Something Big</h3>
+                        <h3>iBlue Prepare for Something Big</h3>
                         <p>"<?php echo $result['content'] ?>" - <?php echo $result['author'] ?></p>
                         <!-- <form class="form-row">
                             <div class="col-md-8">
